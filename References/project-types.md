@@ -1,0 +1,24 @@
+# Project type router
+
+Classify by the product's core workload, not by its marketing label. Projects can belong to multiple categories. Read the matching guides and combine only the applicable concerns. Treat this catalog as broad routing coverage, not a claim that every specialist domain has been fully modeled.
+
+## Common project families
+
+- **Web application / SaaS / marketplace:** browser experience, server-side or client-side rendering, identity, tenant boundaries, business workflows, billing if requested, APIs, data storage, operations. Read workflows-and-ux, architecture-decisions, security-and-privacy, quality-and-validation, delivery-and-operations.
+- **Mobile application:** iOS, Android, cross-platform, tablet, wearable, or field app. Consider device capabilities, lifecycle, offline/sync, notifications, permissions, accessibility, distribution, and platform UI conventions. Read workflows-and-ux, architecture-decisions, technology-selection, security-and-privacy, quality-and-validation, delivery-and-operations.
+- **Desktop application:** native, cross-platform, or browser-wrapped desktop. Consider OS integration, local files, updates, sandboxing, local data, offline behavior, and platform input/accessibility. Read workflows-and-ux, architecture-decisions, security-and-privacy, delivery-and-operations.
+- **API / backend / integration:** public or internal APIs, services, webhooks, queues, partner integrations. Define contracts, auth, idempotency, errors, rate limits, versioning, retries, observability, and ownership. Read architecture-decisions, technology-selection, security-and-privacy, quality-and-validation, delivery-and-operations.
+- **Data engineering / analytics / BI:** batch or streaming ingestion, transformation, storage, reporting, or decision support. Define sources, schemas, lineage, freshness, quality, access, retention, recovery, and reproducibility. Read data-and-ai, security-and-privacy, quality-and-validation, delivery-and-operations.
+- **AI / ML / generative AI:** predictive models, recommendation, vision, speech, retrieval, agents, or AI features. Identify why AI is needed, data rights, evaluation, uncertainty, fallback, human review, abuse, latency, cost, and model/provider change. Read data-and-ai plus security-and-privacy, quality-and-validation, technology-selection, and delivery-and-operations.
+- **Game / interactive / simulation:** real-time interaction, game loop, content pipeline, platforms, controls, accessibility, performance budgets, multiplayer, save state, moderation, or physics as relevant. Avoid assuming an engine or online mode. Read workflows-and-ux, technology-selection, architecture-decisions, quality-and-validation, delivery-and-operations.
+- **Embedded / IoT / robotics / edge:** constrained hardware, sensors/actuators, firmware, connectivity, device identity, physical safety, provisioning, updates, fleet operations, and intermittent connectivity. Read architecture-decisions, security-and-privacy, quality-and-validation, delivery-and-operations; research device/vendor and safety standards for the actual domain.
+- **CLI / developer tool / library / SDK:** commands or public interfaces, installation, versioning, compatibility, error behavior, documentation, packaging, reproducibility, and support policy. Read technology-selection, architecture-decisions, quality-and-validation, delivery-and-operations.
+- **Automation / workflow / RPA:** triggers, steps, state, retries, idempotency, permissions, human approvals, audit history, failure recovery, and external-system limits. Read architecture-decisions, security-and-privacy, quality-and-validation, delivery-and-operations.
+- **Migration / modernization / replacement:** existing system inventory, compatibility, data migration, rollout, coexistence, rollback, risks, and measurable exit criteria. Inspect existing artifacts and read architecture-decisions, security-and-privacy, quality-and-validation, delivery-and-operations.
+- **Hardware + software / cyber-physical:** define physical and digital boundaries, interfaces, lifecycle, safety, serviceability, and manufacturing/procurement dependencies. Research actual applicable standards; do not infer them from a generic template.
+
+## Cross-cutting classification
+
+Also identify whether the product is single-user or multi-user; internal or public; single-tenant or multi-tenant; online, offline, or hybrid; greenfield or existing; prototype, coursework, pilot, or production; and whether it handles sensitive data or physical-world actions. These distinctions often change the plan more than the product label.
+
+For mixed systems, identify the primary user-visible product and its supporting subsystems. Provide one coherent system view and separate subsystem detail only where it clarifies ownership or constraints.
